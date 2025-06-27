@@ -13,6 +13,7 @@
 
 
 #include "asr.h"
+#include "clog.h"
 
 struct WaveHeader {
   bool Validate() const {
@@ -144,7 +145,11 @@ void onAsr(const std::string& asr) {
 }
 
 
-int main() {
+int main(int argc, char* argv[]) {
+	  if (argc != 2) {
+		PLOGE << "usage: " << argv[0] << " xx.wav";
+		return -1;
+	  }
     try {
         // 初始化推理引擎
         std::string asr_onnx = "sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17/model.int8.onnx";

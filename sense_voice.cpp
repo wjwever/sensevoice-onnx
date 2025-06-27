@@ -146,7 +146,7 @@ void SenseVoice::setupIO() {
 }
 
 std::string SenseVoice::recog(const std::vector<float>& data) {
-        Timer cost("AsrCost");
+        // Timer cost("AsrCost");
         // extract fbank
         knf::FbankOptions opts;
         opts.frame_opts.dither = 0;
