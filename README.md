@@ -13,10 +13,21 @@
 </div>
 
 A asr project use silero_vad to dectct voice and sense_voice to do asr, mainly inspired by https://github.com/k2-fsa/sherpa-onnx
-# usage
-After code cloned, run following command to compile the code and run a unit test.
+# Build
+After code cloned, run following command to compile the code。
 ```
 sh build.sh
 ```
-![image](https://github.com/user-attachments/assets/60ae28e3-2f09-4c90-a502-f9ad5b27bd32)
+# Recognize one wav （16khz）
+```
+./bin/infer  test.wav
+```
+![image](https://github.com/user-attachments/assets/392e02bd-993a-4be5-b785-f8b32ac88cda)
+
+# Alsa stream example
+```
+  ./bin/stream  plughw:0,6   # replace plughw:0,6 to your proper device
+```
+![选区_005](https://github.com/user-attachments/assets/2d26809f-7a3b-45db-9545-49f05d8333e0)
+
 </br>
