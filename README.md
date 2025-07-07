@@ -12,7 +12,7 @@
 <h4 align="center">If you are interested in This project, please kindly give Me a triple `Star`, `Fork` and `Watch`, Thanks!</h4>
 </div>
 
-A asr project use silero_vad to dectct voice and sense_voice to do asr, mainly inspired by https://github.com/k2-fsa/sherpa-onnx
+A asr project use silero_vad to dectct voice and sense_voice to do asr.
 # Build
 After code cloned, run following command to compile the code。
 ```
